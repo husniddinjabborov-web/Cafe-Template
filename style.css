@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+header {
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    padding: 8px 16px;
+    z-index: 999999999999999;
+}
+header nav {
+    display: flex;
+}
+header nav > a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    font-size: 0.7em;
+}
+header nav > a:hover {
+    background-color: hsl(0, 0%, 90%);
+    color: black;
+}
+/*  */
+main {
+    background-color: #F7F5F2;
+}
+.banner {
+    width: 100%;
+    height: 75vh;
+    background-image: url('./img/coffeehouse.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(50%);
+    position: relative;
+}
+.banner .banner-center-head {
+    color: white;
+    font-size: 4em;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.banner .banner-center-head h1 {
+    font-weight: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.banner .banner-bottom-left {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    background-color: black;
+    color: white;
+    padding: 4px;
+    letter-spacing: 1.4px;
+    font-size: small;
+}
+.banner .banner-bottom-right {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    color: white;
+    padding: 4px;
+    letter-spacing: 1.4px;
+    font-size: small;
+}
+/*  */
+.about_the_cafe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    margin: auto;
+    width: min(100%, 800px);
+}
+.about_the_cafe > h2 {
+    margin: 80px 0;
+    background-color: black;
+    color: white;
+    padding: 8px;
+    letter-spacing: 3px;
+    font-size: 1em;
+    font-weight: normal;
+}
+.about_the_cafe > p {
+    font-size: larger;
+    padding: 16px 30px 16px 10px;
+    speak-as: 1px;
+    font-weight: 100;
+    color: hsl(0, 0%, 40%);
+    word-spacing: 10px;
+    line-height: 1.4;
+    align-self: flex-start;
+}
+.about_the_cafe > blockquote {
+    background-color: #F1F1F1;
+    margin: 16px 30px 16px 10px;
+    border-left: 6px solid #CCCCCC;
+    padding: 20px 0;
+}
+.about_the_cafe > blockquote p {
+    font-size: larger;
+    padding: 8px 16px;
+    speak-as: 1px;
+    font-weight: 100;
+    color: hsl(0, 0%, 40%);
+    word-spacing: 10px;
+    line-height: 1.4;
+}
+.about_the_cafe img {
+    padding: 12px;
+    filter: grayscale(70%);
+}
+/*  */
+.the_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    margin: auto;
+    width: min(100%, 800px);
+}
+.the_menu > h2 {
+    margin: 60px;
+    background-color: black;
+    color: white;
+    padding: 8px;
+    letter-spacing: 3px;
+    font-size: 1em;
+    font-weight: normal;
+}
+.the_menu_container {
+    width: 100%;
+    padding: 16px;
+}
+.the_menu_head {
+    display: flex;
+    box-shadow: 0 0 10px gray;
+}
+.the_menu_head .the_menu_item {
+    width: 100%;
+    text-align: center;
+    padding: 8px 16px;
+}
+.the_menu_head .the_menu_item:first-child a {
+    width: 100%;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    background-color: #616161;
+}
+.the_menu_head .the_menu_item:last-child a {
+    width: 100%;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+.the_menu_body {
+    box-shadow: 0 0 10px gray;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px 16px;
+}
+.the_menu_body .the_menu_item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.the_menu_body .the_menu_item h3 {
+    font-weight: normal;
+    font-size: larger;
+}
+.the_menu_body .the_menu_item p {
+    color: gray;
+    font-size: larger;
+}
+.the_menu img {
+    padding: 16px;
+    filter: grayscale(70%);
+}
+/*  */
+.where_to_find_us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    margin: auto;
+    width: min(100%, 800px);
+}
+.where_to_find_us > h2 {
+    margin: 60px 0;
+    background-color: black;
+    color: white;
+    padding: 8px;
+    letter-spacing: 3px;
+    font-size: 1em;
+    font-weight: normal;
+}
+.where_to_find_us > p {
+    font-size: larger;
+    padding: 16px 30px 16px 10px;
+    speak-as: 1px;
+    font-weight: 100;
+    color: hsl(0, 0%, 40%);
+    word-spacing: 10px;
+    line-height: 1.4;
+    align-self: flex-start;
+}
+.where_to_find_us img {
+    padding: 12px;
+    filter: grayscale(70%);
+}
+.where_to_find_us > p span {
+    background-color: black;
+    color: white;
+    padding: 5px 8px;
+}
+.where_to_find_us form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 50px;
+}
+.where_to_find_us form input {
+    padding: 16px 8px;
+    margin: 8px 0;
+    font-size: large;
+    border: none;
+    border: 1px solid hsl(0, 0%, 70%);
+}
+.where_to_find_us form button {
+    width: fit-content;
+    padding:  12px 16px;
+    margin: 8px 0;
+    cursor: pointer;
+    font-size: large;
+    border: none;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+}
+.where_to_find_us form button:hover {
+    background-color: #ddd;
+    color: black;
+}
+footer {
+    background-color: #F1F1F1;
+    padding: 80px;
+    text-align: center;
+}
+footer p a {
+    color: inherit;
+}
+@media (max-width: 600px) {
+    .banner {
+        background-size: 100% 100%;
+    }
+    .banner .banner-bottom-left {
+        display: none;
+    }
+}
